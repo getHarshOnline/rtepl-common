@@ -1,0 +1,21 @@
+[package]
+name = "rtepl-repository"
+autotests = false
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+description = "Lists a repository's source files and checks its local dependencies and production Rust syntax against rules the caller supplies"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+syn = { version = "2.0.117", features = ["full", "visit"] }
+
+[[test]]
+name = "main"
+path = "tests/main.rs"
+
+[lints]
+workspace = true

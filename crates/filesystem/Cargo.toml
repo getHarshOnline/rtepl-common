@@ -1,0 +1,17 @@
+[package]
+name = "rtepl-filesystem"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+description = "Opens files read-only without following a final symbolic link and compares their metadata, for tools that decide for themselves which files to admit"
+
+[target.'cfg(unix)'.dependencies]
+rustix = { version = "1.1", features = ["fs"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[lints]
+workspace = true

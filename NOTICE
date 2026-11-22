@@ -1,0 +1,6 @@
+rtepl-common
+Copyright © 2026 RawThoughts Enterprises Private Limited.
+Author and originator: Harsh Joshi.
+
+The shared crates are AGPL-3.0-or-later (LICENSE). Third-party dependencies
+retain their own terms, as identified by Cargo.lock.

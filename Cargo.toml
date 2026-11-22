@@ -1,0 +1,18 @@
+[workspace]
+members = ["crates/filesystem", "crates/repository"]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+rust-version = "1.94"
+publish = false
+license = "AGPL-3.0-or-later"
+
+[workspace.lints.rust]
+missing_docs = "deny"
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+missing_errors_doc = "deny"
+missing_panics_doc = "deny"
